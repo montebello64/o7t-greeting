@@ -12,7 +12,7 @@ https://github.com/montebello64/o7t-greeting.git \
 -l microservice=o7t-greeting
 
 oc expose service rest-name \  
---hostname=rest-name.zuggerschnecksche.de
+--hostname=o7t-greeting-rest-name.zuggerschnecksche.de
 
 oc new-app \  
 https://github.com/montebello64/o7t-greeting.git \  
@@ -23,7 +23,7 @@ https://github.com/montebello64/o7t-greeting.git \
 -l microservice=o7t-greeting
 
 oc expose service rest-greeting \  
---hostname=rest-greeting.zuggerschnecksche.de
+--hostname=o7t-greeting-rest-greeting.zuggerschnecksche.de
 
 oc new-app \  
 https://github.com/montebello64/o7t-greeting.git \  
@@ -34,4 +34,4 @@ https://github.com/montebello64/o7t-greeting.git \
 -l microservice=o7t-greeting
 
 oc expose service rest-consumer-gui \  
---hostname=rest-consumer-gui.zuggerschnecksche.de
+--hostname=o7t-greeting.zuggerschnecksche.de
